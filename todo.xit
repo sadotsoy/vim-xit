@@ -1,0 +1,19 @@
+version 0.1
+
+XIT support for:
+
+TAGS
+[] tags support for 'values'
+  #tag='v a l ues',
+  #tag=" wqe",
+  #tag='v!a.l?u+e'
+
+DATES
+[] support for just year -> 2022
+[] Invalid real dates (NICE TO HAVE).
+
+INVALID
+[] support for invalid indent
+
+COLORS
+[] Universal colors or colorscheme background support (?).

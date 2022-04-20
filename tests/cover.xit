@@ -1,0 +1,46 @@
+[ ] Open
+[x] Checked
+[@] Ongoing
+[~] Obsolete
+
+Emptys "titles"
+[] Empty.
+[ ] Normal.
+[ ] Normal #work, #name=Sadot.
+[ ] #t-a-g=v-a-l-u-e.
+[ ] #国=日本,(#tag="bar").
+[ ] !Important task.
+[] -> 1994-04 my month, #importan_date=_🍻_ -> 1994-04-23
+    -> 2022-Q2 or -> 2044-W53.
+
+Ongoing
+[@] Ongoing Task.
+[@] !Importan Ongoing #tag=example.
+[@] !!! Do before -> 2030-02-22(?).
+
+Completed
+[x] Completed #completed=yay!.
+[x] Complete this before -> 9889/12/33.
+[x] ...! important task completed.
+[x] These lines ...
+    should all ...
+    look the same
+
+Obsolete
+[~] Obsolete stuff #fuchi -> 2033-33
+[~] .........! Important obsolete.
+
+Importants
+[ ] ! !!! This is important!
+[ ] !! ! ! This ! is also important
+
+Dates
+[ ] -> 2022/01/31 -> 2022/W01 -> 2022/Q2 -> 2002-W01 -> 2002-Q2
+[ ] Do this soon -> 2022-01-31!!!
+[ ] Do this (-> 2022-01-31)
+
+Invalids
+[*] Invalid
+[ ]Invalid
+[ x ] Invalid
+[@@] Invalid

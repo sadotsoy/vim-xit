@@ -1,0 +1,14 @@
+*xit.txt*  'Syntax highlighting for [x]it! for Vim'
+
+Author: Sadot Cortes
+License: MIT
+
+INTRODUCTION                                    *xit*
+
+Syntax highlighting for [x]it! for Vim. 
+
+Useful links: https://xit.jotaen.net/
+
+INSPIRATED BY https://github.com/synaptiko/xit.nvim
+
+vim:tw=78:ts=8:ft=help:norl:
