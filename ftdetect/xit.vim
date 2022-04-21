@@ -1,4 +1,4 @@
-" XIT syntax file
+" [x]it syntax file
 "      Language: XIT
 "    Author: Sadot Cortes <sadotsoy>
 "    Maintainer: Sadot Cortes <https://github.com/sadotsoy>
