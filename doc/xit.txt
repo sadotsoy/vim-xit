@@ -1,14 +1,52 @@
-*xit.txt*  'Syntax highlighting for [x]it! for Vim'
+*xit.txt* [x]it! vim plugin support.
+                                v0.1.1 Last modification date: Wed Apr 20 2022
 
-Author: Sadot Cortes
-License: MIT
+                          [x]it! vim plugin support.
+        Includes syntax highlighting, code identation, and more soon!
+                                 License: MIT
 
-INTRODUCTION                                    *xit*
+==============================================================================
+CONTENTS                                                        *xit-contents*
 
-Syntax highlighting for [x]it! for Vim. 
+     1. Usage ............................................ |XitUsage|
+     2. Configuration .................................... |XitConfiguration|
+     3. License .......................................... |License|
+     4. Contributing ..................................... |Contributing|
+
+==============================================================================
+1. Usage                                                            *XitUsage*
+
+The indentation works when the previous line from the current line have a
+NOT(blank, bullet characters "x,@,~") the current linke will be indent to
+the first character of the rule position.
+
+If not the indentation will be '0'.
+
 
 Useful links: https://xit.jotaen.net/
 
 INSPIRATED BY https://github.com/synaptiko/xit.nvim
 
-vim:tw=78:ts=8:ft=help:norl:
+==============================================================================
+2. Configuration                                            *XitConfiguration*
+
+For default the empty checkboxes like `[]` are valid, if you want to invalid
+it set `g:xit_invalid_empty_checkboxes = 1` in your vim config.
+
+==============================================================================
+3. License                                                        *XitLicense*
+
+Xit is MIT licensed.
+
+==============================================================================
+6. Contributing                                              *XitContributing*
+
+Think you can make this plugin better?  Awesome!
+
+send a pull request.
+
+GitHub:    https://github.com/sadotsoy/vim-xit
+
+==============================================================================
+
+vim:tw=78:ts=8:noet:ft=help:norl:

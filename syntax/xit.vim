@@ -1,17 +1,14 @@
-" XIT syntax file
+" [x]it syntax file
 "      Language: XIT
 "    Author: Sadot Cortes <sadotsoy>
 "    Maintainer: Sadot Cortes <https://github.com/sadotsoy>
-" Last Modified: Mon Apr 18 13:19:14 2022
+" Last Modified: Wed Apr 20 2022
 " Inspiration: I was inspired by https://github.com/synaptiko/xit.nvim repo
-"       Version: 0.1
+"       Version: 0.1.1
 
 if exists("b:current_syntax")
   finish
 endif
-
-set tabstop=4
-set shiftwidth=4
 
 " GROUPS
 " Common
@@ -33,10 +30,10 @@ hi! xCheckboxOngoing guifg=#dd77cc ctermfg=170 gui=bold cterm=bold
 hi! xTag guifg=#667F9B ctermfg=110
 " Date
 hi! xDueDate guifg=#DDAA66 ctermfg=180 gui=bold cterm=bold
-
+" Invalid
 hi! xInvalid guifg=#994433 gui=italic,underline
 
-
+" Match the titles
 syn match xitTitle "\v^[^\[| ].*$"
 
 " Colors links
@@ -71,6 +68,7 @@ hi! link xitTag xTag
 " Date
 hi! link xitDueDate xDueDate
 
+" Invalid
 hi! link xitInvalid xInvalid
 
 " Matches a checkbox like "[ ]" or "[]"
@@ -103,7 +101,6 @@ syn match xitTag "\v#[^ \r\:\?\.\!\(\)\,]+" nextgroup=xitValue contained
 " Matches a due date like "-> 2022-03-01". It also supports "-> 2022/03/01" as well as quarters/weeks.
 syn match xitDueDate "\v-\> \d{4}([-\/]|)([WQ]\d{1,2}|\d{2}[-\/]\d{2}|\d{2})( |)" contained
 
-
 " Matches a invalid case
 syn match xitInvalid "\v\[([^x~@ ]\]| \][^ ]| {2,}\]|[x@~]{2,}|.{2,}\]).*"
 
@@ -112,6 +109,7 @@ syn match xitInvalid "\v\[([^x~@ ]\]| \][^ ]| {2,}\]|[x@~]{2,}|.{2,}\]).*"
 if exists("g:xit_invalid_empty_checkboxes")
   " Match empty checkboxes and invalid it
   syn match xitInvalidEmptyCheckboxes "\v\[\].*"
+  " Hilight the invalid empty checkboxes
   hi! link xitInvalidEmptyCheckboxes xInvalid
 else
   " Match empty checkboxes and valid it
