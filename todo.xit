@@ -1,6 +1,9 @@
-version 0.1
-
 XIT support for:
+
+v0.1.1
+[x] Indentation feature
+
+TODO
 
 TAGS
 [] tags support for 'values'
