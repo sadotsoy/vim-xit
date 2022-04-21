@@ -7,8 +7,6 @@
 
 " Only load this indent file when no other was loaded, and flag the fact that we've loaded this script.
 if exists("b:did_indent")
-  echo "exists"
-  call input "x = ".x
   finish
 endif
 let b:did_indent = 1
