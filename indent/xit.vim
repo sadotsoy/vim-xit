@@ -3,7 +3,7 @@
 " Author: Sadot Cortes <sadotsoy>
 " Maintainer: Sadot Cortes <https://github.com/sadotsoy>
 " Last Modified: Wed Apr 20 2022
-" Version: 0.1
+" Version: 0.1.1
 
 " Only load this indent file when no other was loaded, and flag the fact that we've loaded this script.
 if exists("b:did_indent")
