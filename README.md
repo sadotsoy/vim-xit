@@ -16,14 +16,17 @@ Inspired by [ryanolsonx plugin](https://github.com/ryanolsonx/vim-xit) with my p
 [Nord](https://github.com/arcticicestudio/nord-vim)
 ![Nord](./images/nord.png)
 
+## Features
+
+- Basic indentation, I get the column pisition of _NOT_(blank, and bullet characters) and set that as **shifwidth** for the new line,
+  if the previous line does not have the previous rule the **shifwidth** will be `0`.
+
 ## Notes
 
 The [Todo list](todo.xit).
 
-**IMPORTANT** I like the approach to have a empty checkbox like `[]` so this case is valid, if you want to set as invalid you can set it with
-
-`let g:xit_invalid_empty_checkboxes = 1`
-
+**IMPORTANT** For default the empty checkboxes like `[]` are valid, if you want to invalid
+it set `g:xit_invalid_empty_checkboxes = 1` in your vim config.
 
 ## Instalation
 
@@ -47,7 +50,7 @@ Plug 'sadotsoy/xit-vim'
 
 ### Vundle
 
-Using [Vundle](https://github.com/VundleVim/Vundle.vim): 
+Using [Vundle](https://github.com/VundleVim/Vundle.vim):
 
 ```viml
 Plugin 'sadotsoy/xit-vim'
