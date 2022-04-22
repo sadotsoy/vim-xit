@@ -18,15 +18,9 @@ Inspired by [ryanolsonx plugin](https://github.com/ryanolsonx/vim-xit) with my p
 
 ## Features
 
-- Basic indentation, I get the column pisition of _NOT_(blank, and bullet characters) and set that as **shifwidth** for the new line,
-  if the previous line does not have the previous rule the **shifwidth** will be `0`.
+- Indentation, the identation exists when we add text in multiple line using the first character column from the previous line.
 
-## Notes
-
-The [Todo list](todo.xit).
-
-**IMPORTANT** For default the empty checkboxes like `[]` are valid, if you want to invalid
-it set `g:xit_invalid_empty_checkboxes = 1` in your vim config.
+- According with [jotaen specifiction](https://github.com/jotaen/xit/blob/main/Specification.md#checkbox) the checkboxes must be a sequence of 3 characters, including white space, but I like the approach to have empty checkboxes `[]`, so for default a empty checkbox is valid, if you want to invalid it you should add in your config file `g:xit_invalid_empty_checkboxes = 1`.
 
 ## Instalation
 
@@ -55,6 +49,12 @@ Using [Vundle](https://github.com/VundleVim/Vundle.vim):
 ```viml
 Plugin 'sadotsoy/xit-vim'
 ```
+
+## Contributing
+
+- I've added a [todo.xit](./todo.xit) file where I'll add a stuff to add, be free to take resolve it.
+
+- If you think you can make this plugin better, send a pull request.
 
 ## License
 
