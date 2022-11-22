@@ -31,7 +31,7 @@ Using the built in package loader in Vim.
 ```bash
 mkdir -p ~/.vim/pack/3rd/start
 cd ~/.vim/pack/3rd/start
-git clone https://github.com/sadotsoy/xit-vim
+git clone https://github.com/sadotsoy/vim-xit
 ```
 
 ### Plug
@@ -39,7 +39,7 @@ git clone https://github.com/sadotsoy/xit-vim
 Using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```viml
-Plug 'sadotsoy/xit-vim'
+Plug 'sadotsoy/vim-xit'
 ```
 
 ### Vundle
@@ -47,7 +47,7 @@ Plug 'sadotsoy/xit-vim'
 Using [Vundle](https://github.com/VundleVim/Vundle.vim):
 
 ```viml
-Plugin 'sadotsoy/xit-vim'
+Plugin 'sadotsoy/vim-xit'
 ```
 
 ## Contributing
