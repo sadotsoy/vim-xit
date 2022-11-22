@@ -75,25 +75,25 @@ hi! link xitInvalid xInvalid
 syn match xitCheckboxOpen "\v^\[ \]" nextgroup=xitCheckboxOpenSpace
 syn match xitCheckboxOpenSpace " " nextgroup=xitCheckboxOpenPriority contained
 syn match xitCheckboxOpenPriority "\v(\.*!*)" nextgroup=xitCheckboxOpenDesc contained
-syn region xitCheckboxOpenDesc start="." end=/\v(\[|^[a-zA-Z0-9])/me=e-1 contained contains=xitTag,xitDueDate
+syn region xitCheckboxOpenDesc start="." end=/\v(^[\[a-zA-Z0-9])/me=e-1 contained contains=xitTag,xitDueDate
 
 " Matches a checkbox like "[x]"
 syn match xitCheckboxChecked "\v^\[x\]" nextgroup=xitCheckboxCheckedSpace
 syn match xitCheckboxCheckedSpace " " nextgroup=xitCheckboxCheckedPriority contained
 syn match xitCheckboxCheckedPriority "\v( *\.*!*)" nextgroup=xitCheckboxCheckedDesc contained
-syn region xitCheckboxCheckedDesc start="." end=/\v(\[|^[a-zA-Z0-9])/me=e-1 contained contains=xitTag,xitDueDate
+syn region xitCheckboxCheckedDesc start="." end=/\v(^[\[a-zA-Z0-9])/me=e-1 contained contains=xitTag,xitDueDate
 
 " Matches a checkbox like "[@]"
 syn match xitCheckboxOngoing "\v^\[\@\]" nextgroup=xitCheckboxOngoingSpace
 syn match xitCheckboxOngoingSpace " " nextgroup=xitCheckboxOngoingPriority contained
 syn match xitCheckboxOngoingPriority "\v(\.*!*)" nextgroup=xitCheckboxOngoingDesc contained
-syn region xitCheckboxOngoingDesc start="." end=/\v(\[|^[a-zA-Z0-9])/me=e-1 contained contains=xitTag,xitDueDate
+syn region xitCheckboxOngoingDesc start="." end=/\v(^[\[a-zA-Z0-9])/me=e-1 contained contains=xitTag,xitDueDate
 
 " This matches a checkbox like "[~]"
 syn match xitCheckboxObsolete "\v^\[\~\]" nextgroup=xitCheckboxObsoleteSpace
 syn match xitCheckboxObsoleteSpace " " nextgroup=xitCheckboxObsoletePriority contained
 syn match xitCheckboxObsoletePriority "\v(\.*!*)" nextgroup=xitCheckboxObsoleteDesc contained
-syn region xitCheckboxObsoleteDesc start="." end=/\v(\[|^[a-zA-Z0-9])/me=e-1 contained contains=xitTag,xitDueDate
+syn region xitCheckboxObsoleteDesc start="." end=/\v(^[\[a-zA-Z0-9])/me=e-1 contained contains=xitTag,xitDueDate
 
 " Matches a tag with letters, numbers, _, or -
 syn match xitTag "\v#[^ \r\:\?\.\!\(\)\,]+" nextgroup=xitValue contained
@@ -102,7 +102,7 @@ syn match xitTag "\v#[^ \r\:\?\.\!\(\)\,]+" nextgroup=xitValue contained
 syn match xitDueDate "\v-\> \d{4}([-\/]|)([WQ]\d{1,2}|\d{2}[-\/]\d{2}|\d{2})( |)" contained
 
 " Matches a invalid case
-syn match xitInvalid "\v\[([^x~@ ]\]| \][^ ]| {2,}\]|[x@~]{2,}|.{2,}\]).*"
+syn match xitInvalid "\v^\[([x~@ ]\])@!([^x~@ ]\]| \][^ ]|.{2,}\]).*"
 
 
 " Invalid empty checkboxes
